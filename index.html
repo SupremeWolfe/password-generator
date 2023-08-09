@@ -18,16 +18,37 @@
                     <h1 class="text green">random password</h1>
                     <h3 style="margin: 0px;" >Never use an insecure password again.</h3>
                 </div>
+                
+                <div id="main-toggle">
 
-                <btn onclick="generatePw()">Generate passwords</btn>
+                    <div class="toggle">
+                        <btn onclick="toggleNumbers()">Toggle</btn>
+                        <p>Numbers: </p>
+                        <p id="numberToggle-el" class="status"></p>
+                    </div>
+
+                    <div class="toggle">
+                        <btn onclick="toggleCharacters()">Toggle</btn>
+                        <p>Characters:</p>
+                        <p id="characterToggle-el" class="status"></p>
+                    </div>
+
+                    <div class="toggle">
+                        <btn onclick="toggleSpecials()">Toggle</btn>
+                        <p>Special:</p>
+                        <p id="specialToggle-el" class="status"></p>
+                    </div>
+
+                </div>
+                <btn onclick="generatePw()" id="pwBtn">Generate passwords</btn>
             </div>
             <div id="main-bottom">
                 <div class="output">
-                    <p id="output1-el"></p>
+                    <p id="output1-el" class="pw"></p>
                 </div>
-                
+
                 <div class="output">
-                    <p id="output2-el"></p>
+                    <p id="output2-el" class="pw"></p>
                 </div>
 
             </div>
