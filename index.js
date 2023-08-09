@@ -12,10 +12,10 @@ function generatePw(){
     let pw2 = ""
 
     for (i = 0; i < pwLength; i++){
-        random = Math.floor(Math.random * pwLength)
+        random = Math.floor(Math.random() * characters.length)
         console.log(random)
         pw1 += characters[random]
-        random = Math.floor(Math.random * pwLength)
+        random = Math.floor(Math.random() * characters.length)
         pw2 += characters[random]
     }
 
