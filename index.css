@@ -94,5 +94,17 @@ btn{
 }
 
 #lengthInput{
-    margin-bottom: 20px;;
+    height: 30px;
+    width: 45px;;
+    margin-top: 10px;
+    background-color: #273549;
+    border: 1px solid #273549;
+    font-size: 20px;
+    color: #059669;
+}
+
+#main-length{
+    display: flex;
+    gap: 10px;
+    color: #D5D4D8;
 }

@@ -18,7 +18,10 @@
                     <h1 class="text green">random password</h1>
                     <h3 style="margin: 0px;" >Never use an insecure password again.</h3>
                 </div>
-                
+                <div id="main-length">
+                    <p style="font-weight: bold;">Length:</p>
+                    <input type="number" id="lengthInput" placeholder="Max.: 20 chars" >
+                </div>
                 <div id="main-toggle">
 
                     <div class="toggle">
@@ -43,12 +46,17 @@
                 <btn onclick="generatePw()" id="pwBtn">Generate passwords</btn>
             </div>
             <div id="main-bottom">
-                <div class="output">
-                    <p id="output1-el" class="pw"></p>
+                <div>
+                    <div class="output">
+                        <p id="output1-el" class="pw"></p>
+                    </div>
+                    <btn onclick="copyPw1()">Copy</btn>
                 </div>
-
-                <div class="output">
-                    <p id="output2-el" class="pw"></p>
+                <div>
+                    <div class="output">
+                        <p id="output2-el" class="pw"></p>
+                    </div>
+                    <btn>Copy</btn>
                 </div>
 
             </div>
