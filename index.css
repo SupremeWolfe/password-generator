@@ -49,17 +49,21 @@ btn{
 #main-bottom{
 margin-top: 40px;
 display: flex;
-justify-content: space-between;
+justify-content: space-around;
 }
 
 .output{
     background-color: #273549;
-    height: 40px;
-    width: 250px;
+    height: 50px;
+    width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;;
     border-radius: 5px;;
     color: #55F991;
+}
+
+p{
+    font-size: large;
 }
 
