@@ -5,7 +5,20 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 
 let output1El = document.getElementById("output1-el")
 let output2El = document.getElementById("output2-el")
+let pwLength = 15
 
 function generatePw(){
-    
+    let pw1 = ""
+    let pw2 = ""
+
+    for (i = 0; i < pwLength; i++){
+        random = Math.floor(Math.random * pwLength)
+        console.log(random)
+        pw1 += characters[random]
+        random = Math.floor(Math.random * pwLength)
+        pw2 += characters[random]
+    }
+
+    output1El.textContent = pw1
+    output2El.textContent = pw2
 }
