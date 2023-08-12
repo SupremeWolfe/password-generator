@@ -106,6 +106,8 @@ function generatePw(){
 
     output1El.textContent = pw1
     output2El.textContent = pw2
+    pw1 = ""
+    pw2 = ""
 
 }
 
